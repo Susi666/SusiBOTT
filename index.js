@@ -319,19 +319,19 @@ Usa ${prefix}verify para verificarte y poder usar el bot.`
 			const isCmd = body.startsWith(prefix)
       const is = budy.slice(0).trim().split(/ +/).shift().toLowerCase()
 			mess = {
-  wait: 'â³ Espera ',
-  success: 'ð Con exito',
-  Public: 'ð¡ Modo privado activado',
-  ferr: 'Lo siento ocurrio un error',
-  limitend: 'El tiempo se agoto',
+  wait: 'Espere pacientemente ',
+  success: 'Wuenaaa Con exito',
+  Public: 'Modo gay',
+  ferr: 'Wn hay error, perdón no te enojes',
+  limitend: 'No hay mas tiempo :((',
   error: {
   stick: 'Intentalo al rato :(',
   Iv: 'Error en el link'
   },
   only: {
     group: 'Este comando solo puede ser usado en grupos',
-    ownerG: 'Este comando solo puede ser usado por el dueÃ±o del grupo',
-    ownerB: 'Este comando solo puede ser usado por el dueÃ±o del bot',
+    ownerG: 'Este comando solo puede ser usado por el dueño del grupo',
+    ownerB: 'Este comando solo puede ser usado por el dueño del bot',
     admin: 'Debes de ser admin para este comando',
     Badmin: 'El bot debe ser admin para este comando',
     daftarB: `Hola, usa *${prefix}verify* para poder usar el bot`
@@ -774,12 +774,12 @@ quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { re
 case 'ceksaldo':
   if (!isRegister) return reply(mess.only.daftarB)
   uangkau = checkATMuser(sender)
-  hasil = `ã  *ATM* ã
-âââââââââââââââââââââ
-â â½ï¸ *Nama* : *${pushname}*
-â â½ï¸ *Saldo* : *Rp.${uangkau}.-*
-â â½ï¸ *Nomor* : *${sender.split("@")[0]}*
-âââââââââââââââââââââ`
+  hasil = `〘  *ATM* 〙
+╔════════════════════
+╠≽️ *Nama* : *${pushname}*
+╠≽️ *Saldo* : *Rp.${uangkau}.-*
+╠≽️ *Nomor* : *${sender.split("@")[0]}*
+╚════════════════════`
   reply(hasil)
   break
 
