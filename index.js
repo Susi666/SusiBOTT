@@ -3448,26 +3448,26 @@ const serialUser = createSerial(20)
 veri = sender
 if (isGroup) {
   addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-  hasil = `ã  *VericaciÃ³n* ã
-CÃ³digo : *${serialUser}*
-âââââââââââââââââââââ
-â â½ï¸ *Nombre* : *${namaUser}*
-â â½ï¸ *NÃºmero* : *${sender.split("@")[0]}*
-âââââââââââââââââââââ`
+  hasil = `〘  *Vericación* 〙
+Código : *${serialUser}*
+╔════════════════════
+╠≽️ *Nombre* : *${namaUser}*
+╠≽️ *Número* : *${sender.split("@")[0]}*
+╚════════════════════`
 reply(hasil)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
 } else {
   addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-  hasil = `ã  *VerificaciÃ³n* ã
-CÃ³digo : *${serialUser}*
-âââââââââââââââââââââ
-â â½ï¸ *Nombre* : *${namaUser}*
-â â½ï¸ *NÃºmero* : *${sender.split("@")[0]}*
-âââââââââââââââââââââ`
+  hasil = `〘  *Verificación* 〙
+Código : *${serialUser}*
+╔════════════════════
+╠≽️ *Nombre* : *${namaUser}*
+╠≽️ *Número* : *${sender.split("@")[0]}*
+╚════════════════════`
 reply(hasil)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
 }
-tm = `verificaciÃ³n completa usa ${prefix}Menu para ver la lista`
+tm = `verificaciónn completa usa ${prefix}Menu para ver la lista y no abuses de los comandos`
 reply(tm)
 break
 
