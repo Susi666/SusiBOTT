@@ -101,7 +101,7 @@ lolKey = up.LolHumanKey
 //--Kontak
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
-+ 'FN:-·-AleXx-·-\n' // Nama
++ 'FN:-Â·-AleXx-Â·-\n' // Nama
 + 'ORG:AleXxBot;\n' // Nama bot
 + 'TEL;type=CELL;type=VOICE;waid=18183333333:+1 (818) 333-3333\n' // Nomor bot
 + 'END:VCARD'  
@@ -269,21 +269,21 @@ async function starts() {
 				teks = `Hola @${num.split('@')[0]}
 Bienvenid@ a 
 *${mdata.subject}*
-────────────────
-┏━━━━━━━━━━━━━━━━━━━━
-┃──────〘  *Intro* 〙───────
-┃━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *Nombre* :
-┠⊷️ *Edad* :
-┠⊷️ *Pais* :
-┠⊷️ *Género* :
-┗━━━━━━━━━━━━━━━━━━━━
+ââââââââââââââââ
+âââââââââââââââââââââ
+âââââââã  *Intro* ãâââââââ
+âââââââââââââââââââââ
+â â·ï¸ *Nombre* :
+â â·ï¸ *Edad* :
+â â·ï¸ *Pais* :
+â â·ï¸ *GÃ©nero* :
+âââââââââââââââââââââ
 
 Usa ${prefix}verify para verificarte y poder usar el bot.`
 				Lxa.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Le falto odio a @${num.split('@')[0]} bye Aborto 👋`
+				teks = `Le falto odio a @${num.split('@')[0]} bye Aborto ð`
 				Lxa.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
@@ -319,9 +319,9 @@ Usa ${prefix}verify para verificarte y poder usar el bot.`
 			const isCmd = body.startsWith(prefix)
       const is = budy.slice(0).trim().split(/ +/).shift().toLowerCase()
 			mess = {
-  wait: '⏳ Espera ',
-  success: '🎉 Con exito',
-  Public: '🛡 Modo privado activado',
+  wait: 'â³ Espera ',
+  success: 'ð Con exito',
+  Public: 'ð¡ Modo privado activado',
   ferr: 'Lo siento ocurrio un error',
   limitend: 'El tiempo se agoto',
   error: {
@@ -330,8 +330,8 @@ Usa ${prefix}verify para verificarte y poder usar el bot.`
   },
   only: {
     group: 'Este comando solo puede ser usado en grupos',
-    ownerG: 'Este comando solo puede ser usado por el dueño del grupo',
-    ownerB: 'Este comando solo puede ser usado por el dueño del bot',
+    ownerG: 'Este comando solo puede ser usado por el dueÃ±o del grupo',
+    ownerB: 'Este comando solo puede ser usado por el dueÃ±o del bot',
     admin: 'Debes de ser admin para este comando',
     Badmin: 'El bot debe ser admin para este comando',
     daftarB: `Hola, usa *${prefix}verify* para poder usar el bot`
@@ -477,7 +477,7 @@ const checkLimit = (sender) => {
      if (lmt.id === sender) {
       limitCounts = limitawal - lmt.limit
      if (limitCounts <= 0) return Lxa.sendMessage(from, `Maaf limit kamu telah habis, silahkan lakukan pembelian ulang`, text,{ quoted: mek})
-      Lxa.sendMessage(from, `〘  *Limit* 〙
+      Lxa.sendMessage(from, `ã  *Limit* ã
 Sisa limit anda : *${limitCounts}*
 _Penggunaan limit hanya pada fitur-fitur tertentu_`, text, { quoted : mek})
       found = true
@@ -487,7 +487,7 @@ _Penggunaan limit hanya pada fitur-fitur tertentu_`, text, { quoted : mek})
       let obj = { id: sender, limit: 1 }
       _limit.push(obj)
      fs.writeFileSync('./datauser/limit.json', JSON.stringify(_limit))
-     Lxa.sendMessage(from, `〘  *Limit* 〙
+     Lxa.sendMessage(from, `ã  *Limit* ã
 Sisa limit anda : *${limitCounts}*
 _Penggunaan limit hanya pada fitur-fitur tertentu_`, text, { quoted : mek})
                         }
@@ -538,7 +538,7 @@ const kapankah = ['Hari Lagi',
 
 
 //--Auto respon
-if(budy.match('AleXx')){
+if(budy.match('Susi')){
 result = fs.readFileSync(`./temp/stick/emm.webp`)
   Lxa.sendMessage(from, result, sticker, {
 quoted: mek
@@ -564,9 +564,9 @@ case '/menu':
 case '/help':
 case 'help':
 case 'menu':
-hasil = `        ────────────────
+hasil = `        ââââââââââââââââ
 Hola *${pushname}* usa este comando ${prefix}menu
-        ────────────────`
+        ââââââââââââââââ`
 reply(hasil)
         break
 }
@@ -582,179 +582,179 @@ text: `AleXx
 
 Hola *${pushname}* 
 
-〘 *BOT* 〙
-‣ Prefijo:「 ${prefix} 」
-‣ Yo soy: AleXx
-‣ Tiempo encencido: *${kyun(uptime)}*
-‣ Modo: *ON*
-‣ Grupo:  *${groupName}*
-‣ Número de grupos: *${_registered.length}*
-‣ Número de chats: *${totalchat.length}*
-‣ Numero del Dueño wa.me/18183333333 
+ã *BOT* ã
+â£ Prefijo:ã ${prefix} ã
+â£ Yo soy: Susi
+â£ Tiempo encencido: *${kyun(uptime)}*
+â£ Modo: *ON*
+â£ Grupo:  *${groupName}*
+â£ NÃºmero de grupos: *${_registered.length}*
+â£ NÃºmero de chats: *${totalchat.length}*
+â£ Numero del DueÃ±o wa.me/642766660666  
 
-‣ GRUPO OFICIAL *no hay*
+â£ GRUPO OFICIAL *no hay*
 
-┏━━━━━━━━━━━━━━━━━━━━
-┃───〘 ꨄ︎ 𝐀𝐥𝐞𝐗𝐱-𝐁𝐨𝐭 ꨄ︎〙───
-┃━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Info*
-┃ _Información del bot_
-┠⊷️ *${prefix}Owner*
-┃ _Dueño del bot_
-┠⊷️ *${prefix}Ping*
-┃ _Velocidad_
-┗━━━━━━━━━━━━━━━━━━━━
-┏━━━━━━━━━━━━━━━━━━━━
-┃─────〘  *List menu* 〙─────
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 GRUPO 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Listadmin*
-┃ _Lista de los admin_
-┠⊷️ *${prefix}Listonline*
-┃ _Lista de los miembros en linea_
-┠⊷️ *${prefix}Closegc*
-┃ _Cerrar grupo_
-┠⊷️ *${prefix}Opengc*
-┃ _Abrir grupo_
-┠⊷️ *${prefix}Promote*
-┃ _Dar admin_
-┠⊷️ *${prefix}Demote*
-┃ _Quitar admin_
-┠⊷️ *${prefix}Setname*
-┃ _Establecer nombre del grupo_
-┠⊷️ *${prefix}Setdesk*
-┃ _Establecer descripción del grupo_
-┠⊷️ *${prefix}Add*
-┃ _Añadir miembro_
-┠⊷️ *${prefix}Kick*
-┃ _Eliminar miembro_
-┠⊷️ *${prefix}Tagall*
-┃ _Mencionar a todos_
-┠⊷️ *${prefix}Linkgc*
-┃ _Link del grupo_
-┠⊷️ *${prefix}Leave*
-┃ _Eliminar bot_
-┠⊷️ *${prefix}Notif*
-┃ _Notificación a todos_
-┠⊷️ *${prefix}Welcome*
-┃ _On/off Bienvenida_
-┠⊷️ *${prefix}Delete*
-┃ _Eliminar mensaje del bot_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 FUN 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Reverse (Texto)*
-┃ _Escribir al reves_
-┠⊷️ *${prefix}Itsme*
-┃ _Tu perfil_
-┠⊷️ *${prefix}Tagme*
-┃ _Mencionarte_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 MEDIA 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}listvn*
-┃ _Lista de sonidos_
-┠⊷️ *${prefix}listimg*
-┃ _Lista de fotos_
-┠⊷️ *${prefix}liststik*
-┃ _Lista de sticker_
-┠⊷️ *${prefix}listvid*
-┃ _Lista de videos_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 ANIME 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Kusonime (Nombre)*
-┃ _Información de animes_
-┠⊷️ *${prefix}Neonime (Nombre)*
-┃ _Información de neoanimes_
-┠⊷️ *${prefix}Charnime (Nombre)*
-┃ _Personajes de anime_
-┠⊷️ *${prefix}Anime*
-┃ _Imagen aleatoria de anime_
-┠⊷️ *${prefix}Loli*
-┃ _Imagen aleatoria de loli_
-┠⊷️ *${prefix}Neko*
-┃ _Imagen aleatoria de neko_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 Porcentaje 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷ *${prefix}Rate (Texto)*
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 TOOLS 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Tomp3*
-┃ _Audio de video_
-┃ _Canciones_
-┠⊷️ *${prefix}Tts (Texto)*
-┃ _Texto a sonido_
-┠⊷️ *${prefix}Wame*
-┃ _Link de wa.me_
-┠⊷️ *${prefix}Ocr*
-┃ _Texto en imagen_
-┠⊷️ *${prefix}Wait*
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 IMAGENES 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Cogan*
-┃ _Foto aleatoria de un hombre_
-┠⊷️ *${prefix}Cecan*
-┃ _Foto aleatoria de una mujer_
-┠⊷️ *${prefix}Wp*
-┃ _Imagen aleatoria_
-┠⊷️ *${prefix}Img (texto)*
-┃ _Imagen_
-┠⊷️ *${prefix}Google (Texto)*
-┃ _Buscar cosas en google_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 Codigos 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Kodebahasa*
-┃ _Codigo de idioma_
-┠⊷️ *${prefix}Kodenegara*
-┃ _Codigo de país_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 OTRO 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Lirik (Nombre)*
-┃ _Letra de canciones_
-┠⊷️ *${prefix}Map (Area)*
-┃ _Un mapa_
-┠⊷️ *${prefix}Gplaystore*
-┃ _Busqueda en playstore_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 DESCARGAS 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Ytmp3 (Link)*
-┃ _Descargar audios de YT, es mejor con play_
-┠⊷️ *${prefix}Ytmp4 (Link)*
-┃ _Descargar video de YT_
-┠⊷️ *${prefix}Fb (Link)*
-┃ _Descargar de FB_
-┠⊷️ *${prefix}Ig (Link)*
-┃ _Descargar de IG_
-┠⊷️ *${prefix}Scdl (Link)*
-┃ _Descargador de Soundcloud_
-┠⊷️ *${prefix}Tik (Link)*
-┃ _Descargar Tiktok_
-┠⊷️ *${prefix}Pin (Link)*
-┃ _Descargar Pinterest_
-┠⊷️ *${prefix}Joox (Canción)
-┃ _Descargar canciones_
-┗━━━━━━━━━━━━━━━━━━━━
-*〘 Dueño 〙*
-┏━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *${prefix}Clone*
-┃ _Clonacion de perfil_
-┠⊷️ *${prefix}Block*
-┃ _Bloquear_
-┠⊷️ *${prefix}Unblock*
-┃ _Desbloquear_
-┠⊷️ *${prefix}Bc*
-┃ _Anuncio_
-┠⊷️ *${prefix}Blocklist*
-┃ _Lista de usuarios bloqueados_
-┗━━━━━━━━━━━━━━━━━━━━`,
+âââââââââââââââââââââ
+ââââã ê¨ï¸ ðð¥ððð±-ðð¨ð­ ê¨ï¸ãâââ
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Info*
+â _InformaciÃ³n del bot_
+â â·ï¸ *${prefix}Owner*
+â _DueÃ±o del bot_
+â â·ï¸ *${prefix}Ping*
+â _Velocidad_
+âââââââââââââââââââââ
+âââââââââââââââââââââ
+ââââââã  *List menu* ãâââââ
+âââââââââââââââââââââ
+*ã GRUPO ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Listadmin*
+â _Lista de los admin_
+â â·ï¸ *${prefix}Listonline*
+â _Lista de los miembros en linea_
+â â·ï¸ *${prefix}Closegc*
+â _Cerrar grupo_
+â â·ï¸ *${prefix}Opengc*
+â _Abrir grupo_
+â â·ï¸ *${prefix}Promote*
+â _Dar admin_
+â â·ï¸ *${prefix}Demote*
+â _Quitar admin_
+â â·ï¸ *${prefix}Setname*
+â _Establecer nombre del grupo_
+â â·ï¸ *${prefix}Setdesk*
+â _Establecer descripciÃ³n del grupo_
+â â·ï¸ *${prefix}Add*
+â _AÃ±adir miembro_
+â â·ï¸ *${prefix}Kick*
+â _Eliminar miembro_
+â â·ï¸ *${prefix}Tagall*
+â _Mencionar a todos_
+â â·ï¸ *${prefix}Linkgc*
+â _Link del grupo_
+â â·ï¸ *${prefix}Leave*
+â _Eliminar bot_
+â â·ï¸ *${prefix}Notif*
+â _NotificaciÃ³n a todos_
+â â·ï¸ *${prefix}Welcome*
+â _On/off Bienvenida_
+â â·ï¸ *${prefix}Delete*
+â _Eliminar mensaje del bot_
+âââââââââââââââââââââ
+*ã FUN ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Reverse (Texto)*
+â _Escribir al reves_
+â â·ï¸ *${prefix}Itsme*
+â _Tu perfil_
+â â·ï¸ *${prefix}Tagme*
+â _Mencionarte_
+âââââââââââââââââââââ
+*ã MEDIA ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}listvn*
+â _Lista de sonidos_
+â â·ï¸ *${prefix}listimg*
+â _Lista de fotos_
+â â·ï¸ *${prefix}liststik*
+â _Lista de sticker_
+â â·ï¸ *${prefix}listvid*
+â _Lista de videos_
+âââââââââââââââââââââ
+*ã ANIME ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Kusonime (Nombre)*
+â _InformaciÃ³n de animes_
+â â·ï¸ *${prefix}Neonime (Nombre)*
+â _InformaciÃ³n de neoanimes_
+â â·ï¸ *${prefix}Charnime (Nombre)*
+â _Personajes de anime_
+â â·ï¸ *${prefix}Anime*
+â _Imagen aleatoria de anime_
+â â·ï¸ *${prefix}Loli*
+â _Imagen aleatoria de loli_
+â â·ï¸ *${prefix}Neko*
+â _Imagen aleatoria de neko_
+âââââââââââââââââââââ
+*ã Porcentaje ã*
+âââââââââââââââââââââ
+â â· *${prefix}Rate (Texto)*
+âââââââââââââââââââââ
+*ã TOOLS ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Tomp3*
+â _Audio de video_
+â _Canciones_
+â â·ï¸ *${prefix}Tts (Texto)*
+â _Texto a sonido_
+â â·ï¸ *${prefix}Wame*
+â _Link de wa.me_
+â â·ï¸ *${prefix}Ocr*
+â _Texto en imagen_
+â â·ï¸ *${prefix}Wait*
+âââââââââââââââââââââ
+*ã IMAGENES ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Cogan*
+â _Foto aleatoria de un hombre_
+â â·ï¸ *${prefix}Cecan*
+â _Foto aleatoria de una mujer_
+â â·ï¸ *${prefix}Wp*
+â _Imagen aleatoria_
+â â·ï¸ *${prefix}Img (texto)*
+â _Imagen_
+â â·ï¸ *${prefix}Google (Texto)*
+â _Buscar cosas en google_
+âââââââââââââââââââââ
+*ã Codigos ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Kodebahasa*
+â _Codigo de idioma_
+â â·ï¸ *${prefix}Kodenegara*
+â _Codigo de paÃ­s_
+âââââââââââââââââââââ
+*ã OTRO ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Lirik (Nombre)*
+â _Letra de canciones_
+â â·ï¸ *${prefix}Map (Area)*
+â _Un mapa_
+â â·ï¸ *${prefix}Gplaystore*
+â _Busqueda en playstore_
+âââââââââââââââââââââ
+*ã DESCARGAS ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Ytmp3 (Link)*
+â _Descargar audios de YT, es mejor con play_
+â â·ï¸ *${prefix}Ytmp4 (Link)*
+â _Descargar video de YT_
+â â·ï¸ *${prefix}Fb (Link)*
+â _Descargar de FB_
+â â·ï¸ *${prefix}Ig (Link)*
+â _Descargar de IG_
+â â·ï¸ *${prefix}Scdl (Link)*
+â _Descargador de Soundcloud_
+â â·ï¸ *${prefix}Tik (Link)*
+â _Descargar Tiktok_
+â â·ï¸ *${prefix}Pin (Link)*
+â _Descargar Pinterest_
+â â·ï¸ *${prefix}Joox (CanciÃ³n)
+â _Descargar canciones_
+âââââââââââââââââââââ
+*ã DueÃ±o ã*
+âââââââââââââââââââââ
+â â·ï¸ *${prefix}Clone*
+â _Clonacion de perfil_
+â â·ï¸ *${prefix}Block*
+â _Bloquear_
+â â·ï¸ *${prefix}Unblock*
+â _Desbloquear_
+â â·ï¸ *${prefix}Bc*
+â _Anuncio_
+â â·ï¸ *${prefix}Blocklist*
+â _Lista de usuarios bloqueados_
+âââââââââââââââââââââ`,
 
 contextInfo: {
   mentionedJid: [sender]
@@ -774,12 +774,12 @@ quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { re
 case 'ceksaldo':
   if (!isRegister) return reply(mess.only.daftarB)
   uangkau = checkATMuser(sender)
-  hasil = `〘  *ATM* 〙
-╔════════════════════
-╠≽️ *Nama* : *${pushname}*
-╠≽️ *Saldo* : *Rp.${uangkau}.-*
-╠≽️ *Nomor* : *${sender.split("@")[0]}*
-╚════════════════════`
+  hasil = `ã  *ATM* ã
+âââââââââââââââââââââ
+â â½ï¸ *Nama* : *${pushname}*
+â â½ï¸ *Saldo* : *Rp.${uangkau}.-*
+â â½ï¸ *Nomor* : *${sender.split("@")[0]}*
+âââââââââââââââââââââ`
   reply(hasil)
   break
 
@@ -842,14 +842,14 @@ case 'ceksaldo':
 				case 'info':
   me = Lxa.user
   uptime = process.uptime()
-  teks = `*‣ Nombre del bot* : ${me.name}
-  ‣ *Número del bot* : @${me.jid.split('@')[0]}
-  ‣ *Dueño* : AleXx
-  ‣ *Prefijo* : ${prefix}
-  ‣ *Usuarios bloqueados* : ${blocked.length}
-  ‣ *Tiempo activo* : ${kyun(uptime)}
-  ‣ *Total de usuarios* : ${_registered.length} Usuarios
-  ‣ *Total de chats* : ${totalchat.length}`
+  teks = `*â£ Nombre del bot* : ${me.name}
+  â£ *NÃºmero del bot* : @${me.jid.split('@')[0]}
+  â£ *DueÃ±o* : Susi 
+  â£ *Prefijo* : ${prefix}
+  â£ *Usuarios bloqueados* : ${blocked.length}
+  â£ *Tiempo activo* : ${kyun(uptime)}
+  â£ *Total de usuarios* : ${_registered.length} Usuarios
+  â£ *Total de chats* : ${totalchat.length}`
   buffer = await getBuffer(me.imgUrl)
   Lxa.sendMessage(from, buffer, image, {
 caption: teks, contextInfo: {
@@ -864,7 +864,7 @@ const timestamp = speed();
 const latensi = speed() - timestamp
 Lxa.updatePresence(from, Presence.composing)
 uptime = process.uptime()
-Lxa.sendMessage(from, `*El bot responde en*\n‣ *Speed* : ${latensi.toFixed(4)} _Segundos_\n\n*Info bot*\n‣ *Total de chats* : ${totalchat.length}\n‣ *Total de usuarios* : ${_registered.length}\n‣ *Bloqueados* : ${blocked.length}\n‣ *Tiempo activo* : ${kyun(uptime)}`, text, {
+Lxa.sendMessage(from, `*El bot responde en*\nâ£ *Speed* : ${latensi.toFixed(4)} _Segundos_\n\n*Info bot*\nâ£ *Total de chats* : ${totalchat.length}\nâ£ *Total de usuarios* : ${_registered.length}\nâ£ *Bloqueados* : ${blocked.length}\nâ£ *Tiempo activo* : ${kyun(uptime)}`, text, {
   quoted: mek
 })
 break
@@ -887,7 +887,7 @@ break
 
 //--arti nama
 case 'arti':
-if (args.length < 1) return reply('*☒* Ingresa texto')
+if (args.length < 1) return reply('*â* Ingresa texto')
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 teks = body.slice(6)
@@ -912,10 +912,10 @@ try {
 data = await fetchJson(`https://arugaz.herokuapp.com/api/jodohku?nama=${aku}&pasangan=${kamu}`, {
   method: 'get'
 })
-yoi = `‣ *Nombre* : ${aku}
-‣ *Pareja* : ${kamu}
-‣ *Positivo* : ${data.positif}
-‣ *Negativo* : ${data.negatif}`
+yoi = `â£ *Nombre* : ${aku}
+â£ *Pareja* : ${kamu}
+â£ *Positivo* : ${data.positif}
+â£ *Negativo* : ${data.negatif}`
 Lxa.sendMessage(from, yoi, text, {
   quoted: mek
 })
@@ -1015,7 +1015,7 @@ n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
 pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `AleXx`
+  quoted: mek, caption: `Susi`
 })
 
 } catch {
@@ -1039,7 +1039,7 @@ n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
 pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `AleXx`
+  quoted: mek, caption: `Susi`
 })
 
 } catch {
@@ -1093,7 +1093,7 @@ n = JSON.parse(JSON.stringify(data));
 nimek = n[Math.floor(Math.random() * n.length)];
 pok = await getBuffer(nimek)
 Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `AleXx`
+  quoted: mek, caption: `Susi`
 })
 
 break
@@ -1118,7 +1118,7 @@ method: 'get'
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `AleXx`
+quoted: mek, caption: `Susi`
   })
   
   } catch {
@@ -1148,7 +1148,7 @@ method: 'get'
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `AleXx`
+quoted: mek, caption: `Susi`
   })
   
   } catch {
@@ -1174,7 +1174,7 @@ method: 'get'
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `AleXx`
+quoted: mek, caption: `Susi`
   })
   
   } catch {
@@ -1200,7 +1200,7 @@ method: 'get'
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-quoted: mek, caption: `AleXx`
+quoted: mek, caption: `Susi`
   })
   
   } catch {
@@ -1235,10 +1235,10 @@ quoted: mek
 case 'jadian':
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
+  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-aÃ±o`, text, {
 quoted: mek
   })
-  if (!q.includes('-')) return  reply('Ingrese la fecha-mes-año\n*Ejemplo : 09-09-2009*')
+  if (!q.includes('-')) return  reply('Ingrese la fecha-mes-aÃ±o\n*Ejemplo : 09-09-2009*')
   pc = body.slice(9)
   teks1 = pc.split("-")[0];
   teks2 = pc.split("-")[1];
@@ -1248,7 +1248,7 @@ quoted: mek
   iya = await fetchJson(`http://lolhuman.herokuapp.com/api/jadian/${teks1}/${teks2}/${teks3}?apikey=${lolKey}`, {
 method: 'get'
   })
-  hasil = `‣ *Características* : ${iya.result.karakteristik}\n‣ *Descripción* : ${iya.result.deskripsi}`
+  hasil = `â£ *CaracterÃ­sticas* : ${iya.result.karakteristik}\nâ£ *DescripciÃ³n* : ${iya.result.deskripsi}`
   Lxa.sendMessage(from, hasil, text, {
 quoted: mek
   })
@@ -1278,7 +1278,7 @@ break
 case 'weton':
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-año`, text, {
+  if (args.length < 1) return Lxa.sendMessage(from, `Ingrese la fecha-mes-aÃ±o`, text, {
 quoted: mek
   })
   if (!q.includes('-')) return  reply('Masukan tanggal-bulan-tahun dengan benar\n*Contoh : 09-09-2009*')
@@ -1291,7 +1291,7 @@ quoted: mek
   iya = await fetchJson(`http://lolhuman.herokuapp.com/api/weton/${teks1}/${teks2}/${teks3}?apikey=${lolKey}`, {
 method: 'get'
   })
-  hasil = `${iya.result.weton}\n\nCaracterísticas: ${iya.result.karakter}\n Profesión : ${iya.result.pekerjaan}\n Rejeki : ${iya.result.rejeki}\nJodoh : ${iya.result.jodoh}`
+  hasil = `${iya.result.weton}\n\nCaracterÃ­sticas: ${iya.result.karakter}\n ProfesiÃ³n : ${iya.result.pekerjaan}\n Rejeki : ${iya.result.rejeki}\nJodoh : ${iya.result.jodoh}`
 reply(hasil)
 break
   
@@ -1309,7 +1309,7 @@ quoted: mek
   teks = body.slice(13)
   Lxa.updatePresence(from, Presence.composing)
   data = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`)
-  hasil = `*Gay Detectado*\n‣ Nombre : *${args[0]}*\n‣ Porcentaje : *${data.persen}%*\n*${data.desc}*`
+  hasil = `*Gay Detectado*\nâ£ Nombre : *${args[0]}*\nâ£ Porcentaje : *${data.persen}%*\n*${data.desc}*`
   reply(hasil)
   
   break
@@ -1324,7 +1324,7 @@ quoted: mek
   try {
   Lxa.updatePresence(from, Presence.composing)
   data = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`)
-  hasil = `*Bucin Detectado*\n‣ Nombre : *${args[0]}*\n‣ Porcentaje : *${data.persen}%*\n*${data.desc}*`
+  hasil = `*Bucin Detectado*\nâ£ Nombre : *${args[0]}*\nâ£ Porcentaje : *${data.persen}%*\n*${data.desc}*`
   reply(hasil)
   
   } catch {
@@ -1394,9 +1394,9 @@ method: 'get'
 
 teks = '*Google Play Store*\n\n'
 				for (let i of data.result) {
-					teks += `        ────────────────\n\n‣ *Nombre* : ${i.title}\n‣ *Desarrollador* : ${i.developer}\n‣ *Calificación* : ${i.rating}\n‣ *Link* : ${i.url}\n\n`
+					teks += `        ââââââââââââââââ\n\nâ£ *Nombre* : ${i.title}\nâ£ *Desarrollador* : ${i.developer}\nâ£ *CalificaciÃ³n* : ${i.rating}\nâ£ *Link* : ${i.url}\n\n`
 				}
-				teks += `        ────────────────`
+				teks += `        ââââââââââââââââ`
 reply(teks.trim())
 
 } catch {
@@ -1455,7 +1455,7 @@ case 'charnime':
   try {
   data = await fetchJson(`http://lolhuman.herokuapp.com/api/character?apikey=${lolKey}&query=${teks}`)
   buf = await getBuffer(data.result.image.large)
-  hasil = `‣ *Nombre* : ${data.result.name.full} *(${data.result.name.native})*\n‣ *Descripción* : ${data.result.description}`
+  hasil = `â£ *Nombre* : ${data.result.name.full} *(${data.result.name.native})*\nâ£ *DescripciÃ³n* : ${data.result.description}`
   Lxa.sendMessage(from, buf, image, {
 caption: hasil, quoted: mek
   })
@@ -1489,7 +1489,7 @@ case 'kusonime':
   if (args.length < 1) return reply('Escribe el nombre')
   try {
   data = await fetchJson(`https://st4rz.herokuapp.com/api/kuso?q=${teks}`)
-  hasil = `‣ *Nombre* : ${data.title}\n‣ *Info* : ${data.info}\n‣ *Sinopsis* : ${data.sinopsis}\n‣ *Link download* :\n${data.link_dl}`
+  hasil = `â£ *Nombre* : ${data.title}\nâ£ *Info* : ${data.info}\nâ£ *Sinopsis* : ${data.sinopsis}\nâ£ *Link download* :\n${data.link_dl}`
   buf = await getBuffer(data.thumb)
   Lxa.sendMessage(from, buf, image, {
 quoted: mek, caption: hasil
@@ -1509,7 +1509,7 @@ try {
 hmm = await fetchJson(`http://lolhuman.herokuapp.com/api/stalkig/${yolo}?apikey=${lolKey}`)
 reply(mess.wait)
 buffer = await getBuffer(hmm.result.photo_profile)
-hasil = `‣ *Usuario* : ${hmm.result.username}\n‣ *Nombre* : ${hmm.result.fullname}\n‣ *Seguidores* : ${hmm.result.followers}\n‣ *Seguidos* : ${hmm.result.following}\n‣ *Bio* : ${hmm.result.bio}\n‣ *Link* : https://www.instagram.com/${hmm.result.username}\n‣ Suscribete: ${Ig}`
+hasil = `â£ *Usuario* : ${hmm.result.username}\nâ£ *Nombre* : ${hmm.result.fullname}\nâ£ *Seguidores* : ${hmm.result.followers}\nâ£ *Seguidos* : ${hmm.result.following}\nâ£ *Bio* : ${hmm.result.bio}\nâ£ *Link* : https://www.instagram.com/${hmm.result.username}\nâ£ Suscribete: ${Ig}`
 Lxa.sendMessage(from, buffer, image, {
   quoted: mek, caption: hasil
 })
@@ -1746,7 +1746,7 @@ break
   case 'tl':
     if (!isRegister) return reply(mess.only.daftarB)
   
-if (args.length < 1) return Lxa.sendMessage(from, 'Introduce el código y el texto', text, {
+if (args.length < 1) return Lxa.sendMessage(from, 'Introduce el cÃ³digo y el texto', text, {
   quoted: mek
 })
 var pc = body.slice(4)
@@ -1806,7 +1806,7 @@ break
 //--Kejujuran
 case 'truth':
 const ttrth = trut[Math.floor(Math.random() * trut.length)]
-Lxa.sendMessage(from, `‣ *Verdad*\n${ttrth}`, text, {
+Lxa.sendMessage(from, `â£ *Verdad*\n${ttrth}`, text, {
   quoted: mek
 })
 break
@@ -1814,7 +1814,7 @@ break
 //---Tantangan
   case 'dare':
 const der = dare[Math.floor(Math.random() * dare.length)]
-Lxa.sendMessage(from, `‣ *Mentira*\n${der}`, text, {
+Lxa.sendMessage(from, `â£ *Mentira*\n${der}`, text, {
   quoted: mek
 })
 break
@@ -1827,7 +1827,7 @@ if (!isGroupAdmins) return reply(mess.only.admin)
 Lxa.updatePresence(from, Presence.composing)
 if (!isRegister) return reply(mess.only.daftarB)
 if (!isGroup) return reply(mess.only.group)
-teks = `Notificación dada por @${sender.split("@")[0]}\n*Mensaje : ${body.slice(7)}*`
+teks = `NotificaciÃ³n dada por @${sender.split("@")[0]}\n*Mensaje : ${body.slice(7)}*`
 group = await Lxa.groupMetadata(from);
 member = group['participants']
 jids = [];
@@ -1934,12 +1934,12 @@ try {
 data = await fetchJson(`https://api.zeks.xyz/api/neonimesearch?q=${teks}&apikey=${viKey}`, {
   method: 'get'
 })
-teks = '••••••••••••••••••••••\n'
+teks = 'â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢\n'
 for (let i of data.result) {
-  teks += `‣ *Titulo* : ${i.title}\n‣ *link* : ${i.link}\n••••••••••••••••••••••\n`
+  teks += `â£ *Titulo* : ${i.title}\nâ£ *link* : ${i.link}\nâ¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢\n`
 }
 reply(teks.trim())
-if (data.message) return reply(`La información de  *${teks} no se encontro`)
+if (data.message) return reply(`La informaciÃ³n de  *${teks} no se encontro`)
 
 } catch {
   reply(mess.ferr)
@@ -2027,7 +2027,7 @@ if (args.length < 1) return reply(`Escribe el texto\nEjemplo : ${prefix}chatpran
 tels = body.slice(11)
 var teks1 = tels.split("/")[0];
 var teks2 = tels.split("/")[1];
-hasil = `${teks1}͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏${teks2}`
+hasil = `${teks1}ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ${teks2}`
 Lxa.sendMessage(from, hasil, text, {
   quoted: mek
 })
@@ -2093,7 +2093,7 @@ method: 'get'
 case 'map':
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return reply('Ingresa el nombre del área')
+  if (args.length < 1) return reply('Ingresa el nombre del Ã¡rea')
   daerah = body.slice(5)
   try {
   data = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${daerah}`)
@@ -2113,7 +2113,7 @@ case 'alquran':
   Lxa.updatePresence(from, Presence.composing)
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return reply('Escribe el número del área 1-114')
+  if (args.length < 1) return reply('Escribe el nÃºmero del Ã¡rea 1-114')
   if (isNaN(args.length < 1)) return await reply('Gunakan nomor surah')
   tels = body.slice(9)
   try {
@@ -2121,13 +2121,13 @@ case 'alquran':
 method: 'get'
   })
   teks = `
-  〘  *${data.surah}*  〙
-  Es ${data.no} número de versos (${data.jumlah_ayat} párrafo)
-  ──────────────────────
+  ã  *${data.surah}*  ã
+  Es ${data.no} nÃºmero de versos (${data.jumlah_ayat} pÃ¡rrafo)
+  ââââââââââââââââââââââ
 
   `
   for (let i of data.ayat) {
-teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\n••••••••••••••••••••••••••••••••••••••••••••••\n`
+teks += `*(${i.number})* ${i.text}\n*(${i.number})* ${i.translation_id}\nâ¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢â¢\n`
   }
   reply(teks.trim())
   
@@ -2143,7 +2143,7 @@ Lxa.updatePresence(from, Presence.composing)
 
 try {
 data = await fetchJson(`https://docs-jojo.herokuapp.com/api/cerpen`)
-hasil = `*CERPEN*\n‣ Nombre : *${data.result.title}*\n‣ Autor : *${data.result.pengarang}}*\n${data.result.cerpen}`
+hasil = `*CERPEN*\nâ£ Nombre : *${data.result.title}*\nâ£ Autor : *${data.result.pengarang}}*\n${data.result.cerpen}`
 reply(hasil)
 
 } catch {
@@ -2189,7 +2189,7 @@ case 'tafsir':
   try {
   Lxa.updatePresence(from, Presence.composing)
   data = await fetchJson(`http://api-melodicxt-2.herokuapp.com/api/tafsir-quran?query=${teks}&apiKey=${Mkey}`)
-  hasil = `*${data.result.query}*\n\n${data.result.ayat}\n\n*Traducir* :\n${data.result.terjemahan_ayat}\n\n*Interpretación* : ${data.result.tafsir_jalalayn}`
+  hasil = `*${data.result.query}*\n\n${data.result.ayat}\n\n*Traducir* :\n${data.result.terjemahan_ayat}\n\n*InterpretaciÃ³n* : ${data.result.tafsir_jalalayn}`
   reply(hasil)
   
   } catch {
@@ -2202,12 +2202,12 @@ case 'sholat':
   loc = body.slice(7)
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return reply('Ingresa número de área')
+  if (args.length < 1) return reply('Ingresa nÃºmero de Ã¡rea')
   try {
   anu = await fetchJson(`https://mhankbarbar.tech/api/jadwalshalat?daerah=${loc}&apiKey=${BarBarKey}`, {
 method: 'get'
   })
-  mbteks = `*SHALAT*\nÁrea : ${loc}\n‣ *Ashar* : ${anu.Ashar}\n‣ *Dhuha* : ${anu.Dhuha}\n‣ *Dzuhur* : ${anu.Dzuhur}\n‣ *Imsyak* : ${anu.Imsyak}\n‣ *Isya* : ${anu.Isya}\n‣ *Maghrib* : ${anu.Maghrib}\n‣ *Subuh* : ${anu.Subuh}`
+  mbteks = `*SHALAT*\nÃrea : ${loc}\nâ£ *Ashar* : ${anu.Ashar}\nâ£ *Dhuha* : ${anu.Dhuha}\nâ£ *Dzuhur* : ${anu.Dzuhur}\nâ£ *Imsyak* : ${anu.Imsyak}\nâ£ *Isya* : ${anu.Isya}\nâ£ *Maghrib* : ${anu.Maghrib}\nâ£ *Subuh* : ${anu.Subuh}`
   Lxa.sendMessage(from, mbteks, text, {
 quoted: mek
   })
@@ -2221,13 +2221,13 @@ quoted: mek
 case 'cuaca':
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return reply('Ingrese el nombre del área')
+  if (args.length < 1) return reply('Ingrese el nombre del Ã¡rea')
   tels = body.slice(7)
   try {
   anu = await fetchJson(`https://freerestapi.herokuapp.com/api/v1/cuaca?p=${tels}`, {
 method: 'get'
   })
-  hasil = `‣ *El lugar* : ${anu.hasil.Nama}\n‣ *Cuaca* : ${anu.hasil.Cuaca}\n‣ *Viento* : ${anu.hasil.Angin}\n‣ *Suhu* : ${anu.hasil.Suhu}\n‣ *Humedad* : ${anu.hasil.Kelembaban}\n‣ *Información* : ${anu.hasil.Keterangan}`
+  hasil = `â£ *El lugar* : ${anu.hasil.Nama}\nâ£ *Cuaca* : ${anu.hasil.Cuaca}\nâ£ *Viento* : ${anu.hasil.Angin}\nâ£ *Suhu* : ${anu.hasil.Suhu}\nâ£ *Humedad* : ${anu.hasil.Kelembaban}\nâ£ *InformaciÃ³n* : ${anu.hasil.Keterangan}`
   Lxa.sendMessage(from, hasil, text, {
 quoted: mek
   })
@@ -2247,7 +2247,7 @@ case 'infogempa':
   anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infogempa`, {
 method: 'get'
   })
-  hasil = `‣ *Profundidad* : ${anu.kedalaman}\n‣ *Coordinar* : ${anu.koordinat}\n‣ *Ubicación* : ${anu.lokasi}\n‣ *Magnitude* : ${anu.magnitude}\n‣ *Potensia* : ${anu.potensi}\n‣ *Hora* : ${anu.waktu}`
+  hasil = `â£ *Profundidad* : ${anu.kedalaman}\nâ£ *Coordinar* : ${anu.koordinat}\nâ£ *UbicaciÃ³n* : ${anu.lokasi}\nâ£ *Magnitude* : ${anu.magnitude}\nâ£ *Potensia* : ${anu.potensi}\nâ£ *Hora* : ${anu.waktu}`
   buffer = await getBuffer(anu.map)
   Lxa.sendMessage(from, buffer, image, {
 caption: hasil, quoted: mek
@@ -2269,7 +2269,7 @@ caption: hasil, quoted: mek
   if (checkATMuser(sender) >= total) {
 confirmATM(sender, total)
 bayarLimit(sender, payout)
-await reply(`〘  *NOTA PEMBAYARAN*  〙\n\n‣ *Pengirim* : Admin\n‣ *Penerima* : ${pushname}\n‣ *Nominal pembelian* : ${body.slice(10)} \n‣ *Harga limit* : ${koinPerlimit}/limit\n‣ *Sisa saldo* : ${checkATMuser(sender)}\n\nProses berhasil dengan nomer pembayaran \n${createSerial(15)}`)
+await reply(`ã  *NOTA PEMBAYARAN*  ã\n\nâ£ *Pengirim* : Admin\nâ£ *Penerima* : ${pushname}\nâ£ *Nominal pembelian* : ${body.slice(10)} \nâ£ *Harga limit* : ${koinPerlimit}/limit\nâ£ *Sisa saldo* : ${checkATMuser(sender)}\n\nProses berhasil dengan nomer pembayaran \n${createSerial(15)}`)
   }
   break
 
@@ -2293,12 +2293,12 @@ hasiltf = jumlah - fee
 addKoinUser(tujuantf, hasiltf)
 confirmATM(sender, jumlah)
 addKoinUser('6282223014661@s.whatsapp.net', fee)
-await reply(`〘  *TRANSFER*  〙
+await reply(`ã  *TRANSFER*  ã
   Pengiriman saldo telah sukses
-  ‣ *Dari* : ${sender.split("@")[0]}
-  ‣ *Ke* : ${tujuan}
-  ‣ *Jumlah transfer* : Rp.${jumlah},-
-  ‣ *Biaya admin* : Rp.${fee},-`)
+  â£ *Dari* : ${sender.split("@")[0]}
+  â£ *Ke* : ${tujuan}
+  â£ *Jumlah transfer* : Rp.${jumlah},-
+  â£ *Biaya admin* : Rp.${fee},-`)
   }
   
   break
@@ -2310,9 +2310,9 @@ ppimg = await Lxa.getProfilePicture(`${sender.split('@')[0]}@c.us`)
   } catch {
 ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
   }
-  teks = `‣ *Nombre* : ${pushname}
-  ‣ *Número* : ${sender.split("@")[0]}
-  ‣ *Link* : wa.me/${sender.split("@")[0]}`
+  teks = `â£ *Nombre* : ${pushname}
+  â£ *NÃºmero* : ${sender.split("@")[0]}
+  â£ *Link* : wa.me/${sender.split("@")[0]}`
   its = await getBuffer (ppimg)
   Lxa.sendMessage(from, its, image, {
 quoted: mek, caption: teks
@@ -2329,7 +2329,7 @@ case 'play':
   try {
   anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
   if (anu.error) return reply(anu.error)
-  infomp3 = `*Audio*\n‣ *Nombre* : ${anu.result.title}\n‣ *Fuente* : ${anu.result.source}\n‣ *Tamaño* : ${anu.result.size}\n\n_El audio se esta mandando, si no llega descargue por el link_\n‣ *Link* : ${anu.result.url_audio}
+  infomp3 = `*Audio*\nâ£ *Nombre* : ${anu.result.title}\nâ£ *Fuente* : ${anu.result.source}\nâ£ *TamaÃ±o* : ${anu.result.size}\n\n_El audio se esta mandando, si no llega descargue por el link_\nâ£ *Link* : ${anu.result.url_audio}
   `
   buffer = await getBuffer(anu.result.thumbnail)
   lagu = await getBuffer(anu.result.url_audio)
@@ -2354,7 +2354,7 @@ case 'ytmp3':
   if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Formato de link incorrecto')
   try {
   anu = await fetchJson(`https://api.zeks.xyz/api/ytmp3/2?url=${play}&apikey=${viKey}`)
-  infomp3 = `*Audio!!!*\n‣ Nombre : ${anu.result.title}\n‣ Fuente: ${anu.result.source}\n‣ Tamaño: ${anu.result.size}\n\n_El audio se esta mandando espere, si no llega descargue por el link_\n‣ *link* : ${anu.result.link}`
+  infomp3 = `*Audio!!!*\nâ£ Nombre : ${anu.result.title}\nâ£ Fuente: ${anu.result.source}\nâ£ TamaÃ±o: ${anu.result.size}\n\n_El audio se esta mandando espere, si no llega descargue por el link_\nâ£ *link* : ${anu.result.link}`
   buffer = await getBuffer(anu.result.thumb)
   lagu = await getBuffer(anu.result.link)
   Lxa.sendMessage(from, buffer, image, {
@@ -2378,7 +2378,7 @@ case 'ytmp4':
   anu = await fetchJson(`https://api.zeks.xyz/api/ytmp4?url=${play}&apikey=${viKey}`)
   if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('Format link salah, gunakan link youtube')
   if (anu.error) return reply(anu.error)
-  infomp3 = `*Video*\n‣ *Nombre* : ${anu.result.title}\n‣ *Fuente* : ${anu.result.source}\n‣ *Tamaño* : ${anu.result.size}\n\n_Se esta mandando el video, si no llega descargue por el link_\n‣ *link* : ${anu.result.url_video}`
+  infomp3 = `*Video*\nâ£ *Nombre* : ${anu.result.title}\nâ£ *Fuente* : ${anu.result.source}\nâ£ *TamaÃ±o* : ${anu.result.size}\n\n_Se esta mandando el video, si no llega descargue por el link_\nâ£ *link* : ${anu.result.url_video}`
   buffer = await getBuffer(anu.result.thumbnail)
   lagu = await getBuffer(anu.result.url_video)
   Lxa.sendMessage(from, buffer, image, {
@@ -2402,7 +2402,7 @@ mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result) {
-						teks += `*Titulo* : ${i.title}\n*Id* : ${i.id}\n*Publicado* : ${i.publishTime}\n*Duración* : ${i.duration}\n*Vistas* : ${h2k(i.views)}\n=================\n`
+						teks += `*Titulo* : ${i.title}\n*Id* : ${i.id}\n*Publicado* : ${i.publishTime}\n*DuraciÃ³n* : ${i.duration}\n*Vistas* : ${h2k(i.views)}\n=================\n`
 					}
 					reply(teks.trim())
 					
@@ -2441,7 +2441,7 @@ case 'fb':
   try {
   anu = await fetchJson(`https://mhankbarbar.tech/api/epbe?url=${play}&apiKey=${BarbarKey}`)
   if (anu.error) return reply(anu.error)
-  infomp3 = `*Video*\n‣ *Nombre* : ${anu.title}\n‣ *Publicación* : ${anu.published}\n‣ *Tamaño* : ${anu.filesize}\n\n_El video se esta enviando, si no llega descargue por el link_\n‣ *link* : ${anu.result}`
+  infomp3 = `*Video*\nâ£ *Nombre* : ${anu.title}\nâ£ *PublicaciÃ³n* : ${anu.published}\nâ£ *TamaÃ±o* : ${anu.filesize}\n\n_El video se esta enviando, si no llega descargue por el link_\nâ£ *link* : ${anu.result}`
   lagu = await getBuffer(anu.result)
   Lxa.sendMessage(from, lagu, video, {
 mimetype: 'video/mp4', filename: `${anu.result.title}.mp4`, quoted: mek
@@ -2475,13 +2475,13 @@ mimetype: 'video/mp4', filename: `Imlexa.mp4`, quoted: mek
 case 'joox':
   if (!isRegister) return reply(mess.only.daftarB)
   
-  if (args.length < 1) return reply('Ingresa el nombre de la canción')
+  if (args.length < 1) return reply('Ingresa el nombre de la canciÃ³n')
   tels = body.slice(6)
   try {
   data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${tels}&apikey=BotWeA`, {
 method: 'get'
   })
-  infomp3 = `*Encontrado!!*\nNombre : ${data.result.judul}\nAlbúm : ${data.result.album}\nPublicado: ${data.result.dipublikasi}`
+  infomp3 = `*Encontrado!!*\nNombre : ${data.result.judul}\nAlbÃºm : ${data.result.album}\nPublicado: ${data.result.dipublikasi}`
   buffer = await getBuffer(data.result.thumb)
   lagu = await getBuffer(data.result.mp3)
   Lxa.sendMessage(from, buffer, image, {
@@ -2587,7 +2587,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 //---textpro
 				case 'textpro':
 					if (args.length < 1) {
-						return reply('Elije un número del, 1 - 162')
+						return reply('Elije un nÃºmero del, 1 - 162')
 					} else if (args[0].toLowerCase() === 'list') {
 						teks = await fetchText('https://mhankbarbar.tech/api/textpro/listtheme')
 						teks = teks.replace(/<br>/g, '\n')
@@ -2610,7 +2610,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 //ephoto
 				case 'ephoto':
 					if (args.length < 1) {
-						return reply('Elije un número del, 1 - 216')
+						return reply('Elije un nÃºmero del, 1 - 216')
 					} else if (args[0].toLowerCase() === 'list') {
 						teks = await fetchText('https://mhankbarbar.tech/api/ephoto/listtheme')
 						teks = teks.replace(/<br>/g, '\n')
@@ -2693,7 +2693,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Error al convertir video en pegatina ${tipe} Sticker`)
+								reply(`â Error al convertir video en pegatina ${tipe} Sticker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -2837,7 +2837,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				setiker.push(`${svst}`)
 				fs.writeFileSync(`./temp/stick/${svst}.webp`, delb)
 				fs.writeFileSync('./temp/stik.json', JSON.stringify(setiker))
-				Lxa.sendMessage(from, `Sticker añadido con exito\ncompruebalo con ${prefix}liststik`, MessageType.text, { quoted: mek })
+				Lxa.sendMessage(from, `Sticker aÃ±adido con exito\ncompruebalo con ${prefix}liststik`, MessageType.text, { quoted: mek })
 				break
 
 			case 'addvn':
@@ -2850,7 +2850,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				audionye.push(`${svst}`)
 				fs.writeFileSync(`./temp/audio/${svst}.mp3`, delb)
 				fs.writeFileSync('./temp/vn.json', JSON.stringify(audionye))
-				Lxa.sendMessage(from, `Audio añadido con exito\ncompruebalo con ${prefix}listvn`, MessageType.text, { quoted: mek })
+				Lxa.sendMessage(from, `Audio aÃ±adido con exito\ncompruebalo con ${prefix}listvn`, MessageType.text, { quoted: mek })
 				break
 
 			case 'getvn':
@@ -2883,7 +2883,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				imagenye.push(`${svst}`)
 				fs.writeFileSync(`./temp/foto/${svst}.jpeg`, delb)
 				fs.writeFileSync('./temp/image.json', JSON.stringify(imagenye))
-				Lxa.sendMessage(from, `Video añadido\ncompruebalo con${prefix}listimage`, MessageType.text, { quoted: mek })
+				Lxa.sendMessage(from, `Video aÃ±adido\ncompruebalo con${prefix}listimage`, MessageType.text, { quoted: mek })
 				break
 
 			case 'getimg':
@@ -2915,7 +2915,7 @@ mimetype: 'video/mp4', filename: `${anu.nameInfo}.mp4`, quoted: mek
 				videonye.push(`${svst}`)
 				fs.writeFileSync(`./temp/video/${svst}.mp4`, delb)
 				fs.writeFileSync('./temp/vid.json', JSON.stringify(videonye))
-				Lxa.sendMessage(from, `Video añadido con exito\ncompruebalo con ${prefix}listvid`, MessageType.text, { quoted: mek })
+				Lxa.sendMessage(from, `Video aÃ±adido con exito\ncompruebalo con ${prefix}listvid`, MessageType.text, { quoted: mek })
 				break
 
 			case 'getvid':
@@ -2950,7 +2950,7 @@ yup = anu.result.soal
 jawab = anu.result.jawaban
 alasam = anu.result.desk
 setTimeout(() => {
-  Lxa.sendMessage(from, `‣ *Respuesta* : ${jawab}\n‣ *Keterangn* : ${alasam}`, text, {
+  Lxa.sendMessage(from, `â£ *Respuesta* : ${jawab}\nâ£ *Keterangn* : ${alasam}`, text, {
 quoted: mek
   }) // ur cods
 }, 30000) // 1000 = 1s,
@@ -2958,7 +2958,7 @@ setTimeout(() => {
   Lxa.sendMessage(from, '_10 Otro segundo_', text) // ur cods
 }, 20000) // 1000 = 1s,
 setTimeout(() => {
-  Lxa.sendMessage(from, '_20 Otro segundo_…', text) // ur cods
+  Lxa.sendMessage(from, '_20 Otro segundo_â¦', text) // ur cods
 }, 10000) // 1000 = 1s,
 setTimeout(() => {
   Lxa.sendMessage(from, text) // ur cods
@@ -2983,7 +2983,7 @@ anum = await Lxa.downloadAndSaveMediaMessage(anumedia)
 ran = getRandom('.webp')
 exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
   fs.unlinkSync(anum)
-  if (err) return reply('Error al convertir el sticker en vídeo')
+  if (err) return reply('Error al convertir el sticker en vÃ­deo')
   buffer = fs.readFileSync(ran)
   Lxa.sendMessage(from, buffer, video, {
 quoted: mek, caption: 'Satan'
@@ -3034,7 +3034,7 @@ if (!isRegister) return reply(mess.only.daftarB)
 buffer = await getBuffer(anu.result.soalImg)
 jawab = anu.result.jawaban
 setTimeout(() => {
-  Lxa.sendMessage(from, `*➸ Responder :* ${jawab}`, text, {
+  Lxa.sendMessage(from, `*â¸ Responder :* ${jawab}`, text, {
 quoted: mek
   }) // ur cods
 }, 30000) // 1000 = 1s,
@@ -3042,7 +3042,7 @@ setTimeout(() => {
   Lxa.sendMessage(from, '_10 segundos_', text) // ur cods
 }, 20000) // 1000 = 1s,
 setTimeout(() => {
-  Lxa.sendMessage(from, '_20 segundos_…', text) // ur cods
+  Lxa.sendMessage(from, '_20 segundos_â¦', text) // ur cods
 }, 10000) // 1000 = 1s,
 setTimeout(() => {
   Lxa.sendMessage(from, text) // ur cods
@@ -3058,7 +3058,7 @@ break
 
 //--google voice
 				case 'tts':
-					if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el código', text, {quoted: mek})
+					if (args.length < 1) return Lxa.sendMessage(from, 'Escribe el cÃ³digo', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return Lxa.sendMessage(from, 'Escribe el texto', text, {quoted: mek})
 					dtt = body.slice(8)
@@ -3180,10 +3180,10 @@ members_id = []
 teks = (args.length > 1) ? body.slice(8).trim(): ''
 teks += `  Total : ${groupMembers.length}\n`
 for (let mem of groupMembers) {
-  teks += `┃ @${mem.jid.split('@')[0]}\n`
+  teks += `â @${mem.jid.split('@')[0]}\n`
   members_id.push(mem.jid)
 }
-mentions('〘  *TAGALL* 〙\n┏━━━━━━━━━━━━━━━━━━━━\n┠⊷'+teks+'┃━━━━━━━━━━━━━━━━━━━━\n┃────AleXx-Bot────\n┗━━━━━━━━━━━━━━━━━━━━', members_id, true)
+mentions('ã  *TAGALL* ã\nâââââââââââââââââââââ\nâ â·'+teks+'âââââââââââââââââââââ\nâââââAleXx-Botââââ\nâââââââââââââââââââââ', members_id, true)
 break
 
 
@@ -3254,7 +3254,7 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 Lxa.groupUpdateDescription(from, `${body.slice(9)}`)
-Lxa.sendMessage(from, 'Cambiar descripción del grupo', text, {
+Lxa.sendMessage(from, 'Cambiar descripciÃ³n del grupo', text, {
   quoted: mek
 })
 break
@@ -3284,8 +3284,8 @@ break
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('Ingresa el número')
-					if (args[0].startsWith('08')) return reply('Usa el código de país')
+					if (args.length < 1) return reply('Ingresa el nÃºmero')
+					if (args[0].startsWith('08')) return reply('Usa el cÃ³digo de paÃ­s')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						Lxa.groupAdd(from, [num])
@@ -3348,11 +3348,11 @@ case 'setppbot':
 if (isEventon) return reply('*SUDAH AKTIF* !!!')
 event.push(from)
 fs.writeFileSync('./datauser/event.json', JSON.stringify(event))
-reply('*☉]* Mengaktifkan *EVENT* di group ini*')
+reply('*â]* Mengaktifkan *EVENT* di group ini*')
   } else if (Number(args[0]) === 0) {
 event.splice(from, 1)
 fs.writeFileSync('./datauser/event.json', JSON.stringify(event))
-reply('*☉* Menonaktifkan *EVENT* di group ini*')
+reply('*â* Menonaktifkan *EVENT* di group ini*')
   } else {
 reply(ind.satukos())
   }
@@ -3400,7 +3400,7 @@ reply(ind.satukos())
   case 'artimimpi':
 aruga = body.slice(11)
 if (!isRegister) return reply(mess.only.daftarB)
-if (args.length < 1) return reply(`Que sueño es ?\nEjemplo: ${prefix}artimimpi`)
+if (args.length < 1) return reply(`Que sueÃ±o es ?\nEjemplo: ${prefix}artimimpi`)
 try {
 anu = await fetchJson(`https://videfikri.com/api/primbon/artimimpi/?mimpi=${aruga}`, {
   method: 'get'
@@ -3448,26 +3448,26 @@ const serialUser = createSerial(20)
 veri = sender
 if (isGroup) {
   addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-  hasil = `〘  *Vericación* 〙
-Código : *${serialUser}*
-╔════════════════════
-╠≽️ *Nombre* : *${namaUser}*
-╠≽️ *Número* : *${sender.split("@")[0]}*
-╚════════════════════`
+  hasil = `ã  *VericaciÃ³n* ã
+CÃ³digo : *${serialUser}*
+âââââââââââââââââââââ
+â â½ï¸ *Nombre* : *${namaUser}*
+â â½ï¸ *NÃºmero* : *${sender.split("@")[0]}*
+âââââââââââââââââââââ`
 reply(hasil)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
 } else {
   addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
-  hasil = `〘  *Verificación* 〙
-Código : *${serialUser}*
-╔════════════════════
-╠≽️ *Nombre* : *${namaUser}*
-╠≽️ *Número* : *${sender.split("@")[0]}*
-╚════════════════════`
+  hasil = `ã  *VerificaciÃ³n* ã
+CÃ³digo : *${serialUser}*
+âââââââââââââââââââââ
+â â½ï¸ *Nombre* : *${namaUser}*
+â â½ï¸ *NÃºmero* : *${sender.split("@")[0]}*
+âââââââââââââââââââââ`
 reply(hasil)
   console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
 }
-tm = `verificación completa usa ${prefix}Menu para ver la lista`
+tm = `verificaciÃ³n completa usa ${prefix}Menu para ver la lista`
 reply(tm)
 break
 
@@ -3518,7 +3518,7 @@ Lxa.deleteMessage(from, {
   id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true
 })
 } catch {
-  reply('Solo puedo borrar mensajes míos')
+  reply('Solo puedo borrar mensajes mÃ­os')
 }
 break
 
@@ -3608,7 +3608,7 @@ break
 						pp = await Lxa.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						Lxa.updateProfilePicture(botNumber, buffer)
-						mentions(`La foto de perfil se actualizó correctamente usando la foto de perfil @${id.split('@')[0]}`, [jid], true)
+						mentions(`La foto de perfil se actualizÃ³ correctamente usando la foto de perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
 						reply('Error')
 					}
@@ -3631,7 +3631,7 @@ break
 
 				default:
 				if (body.startsWith(`${prefix}${command}`)) {
-  reply(`        ────────────────\nHola *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
+  reply(`        ââââââââââââââââ\nHola *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ââââââââââââââââ`)
 				}
 					if (isGroup && isSimi && budy != undefined) {
 						console.log(budy)
