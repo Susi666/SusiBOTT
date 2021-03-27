@@ -564,9 +564,9 @@ case '/menu':
 case '/help':
 case 'help':
 case 'menu':
-hasil = `        ââââââââââââââââ
+hasil = `        ────────────────
 Hola *${pushname}* usa este comando ${prefix}menu
-        ââââââââââââââââ`
+        ────────────────`
 reply(hasil)
         break
 }
@@ -578,183 +578,183 @@ case '?':
   if (!isRegister) return reply(mess.only.daftarB)
   uptime = process.uptime()
   const Menu = {
-text: `AleXx
+text: `Susi
 
 Hola *${pushname}* 
 
-ã *BOT* ã
-â£ Prefijo:ã ${prefix} ã
-â£ Yo soy: Susi
-â£ Tiempo encencido: *${kyun(uptime)}*
-â£ Modo: *ON*
-â£ Grupo:  *${groupName}*
-â£ NÃºmero de grupos: *${_registered.length}*
-â£ NÃºmero de chats: *${totalchat.length}*
-â£ Numero del DueÃ±o wa.me/642766660666  
+〘 *BOT* 〙
+‣ Prefijo:「 ${prefix} 」
+‣ Yo soy: Susi
+‣ Tiempo encencido: *${kyun(uptime)}*
+‣ Modo: *ON*
+‣ Grupo:  *${groupName}*
+‣ Número de grupos: *${_registered.length}*
+‣ Número de chats: *${totalchat.length}*
+‣ Numero del Dueño wa.me/642766660666 
 
-â£ GRUPO OFICIAL *no hay*
+‣ GRUPO OFICIAL *no hay*
 
-âââââââââââââââââââââ
-ââââã ê¨ï¸ ðð¥ððð±-ðð¨ð­ ê¨ï¸ãâââ
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Info*
-â _InformaciÃ³n del bot_
-â â·ï¸ *${prefix}Owner*
-â _DueÃ±o del bot_
-â â·ï¸ *${prefix}Ping*
-â _Velocidad_
-âââââââââââââââââââââ
-âââââââââââââââââââââ
-ââââââã  *List menu* ãâââââ
-âââââââââââââââââââââ
-*ã GRUPO ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Listadmin*
-â _Lista de los admin_
-â â·ï¸ *${prefix}Listonline*
-â _Lista de los miembros en linea_
-â â·ï¸ *${prefix}Closegc*
-â _Cerrar grupo_
-â â·ï¸ *${prefix}Opengc*
-â _Abrir grupo_
-â â·ï¸ *${prefix}Promote*
-â _Dar admin_
-â â·ï¸ *${prefix}Demote*
-â _Quitar admin_
-â â·ï¸ *${prefix}Setname*
-â _Establecer nombre del grupo_
-â â·ï¸ *${prefix}Setdesk*
-â _Establecer descripciÃ³n del grupo_
-â â·ï¸ *${prefix}Add*
-â _AÃ±adir miembro_
-â â·ï¸ *${prefix}Kick*
-â _Eliminar miembro_
-â â·ï¸ *${prefix}Tagall*
-â _Mencionar a todos_
-â â·ï¸ *${prefix}Linkgc*
-â _Link del grupo_
-â â·ï¸ *${prefix}Leave*
-â _Eliminar bot_
-â â·ï¸ *${prefix}Notif*
-â _NotificaciÃ³n a todos_
-â â·ï¸ *${prefix}Welcome*
-â _On/off Bienvenida_
-â â·ï¸ *${prefix}Delete*
-â _Eliminar mensaje del bot_
-âââââââââââââââââââââ
-*ã FUN ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Reverse (Texto)*
-â _Escribir al reves_
-â â·ï¸ *${prefix}Itsme*
-â _Tu perfil_
-â â·ï¸ *${prefix}Tagme*
-â _Mencionarte_
-âââââââââââââââââââââ
-*ã MEDIA ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}listvn*
-â _Lista de sonidos_
-â â·ï¸ *${prefix}listimg*
-â _Lista de fotos_
-â â·ï¸ *${prefix}liststik*
-â _Lista de sticker_
-â â·ï¸ *${prefix}listvid*
-â _Lista de videos_
-âââââââââââââââââââââ
-*ã ANIME ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Kusonime (Nombre)*
-â _InformaciÃ³n de animes_
-â â·ï¸ *${prefix}Neonime (Nombre)*
-â _InformaciÃ³n de neoanimes_
-â â·ï¸ *${prefix}Charnime (Nombre)*
-â _Personajes de anime_
-â â·ï¸ *${prefix}Anime*
-â _Imagen aleatoria de anime_
-â â·ï¸ *${prefix}Loli*
-â _Imagen aleatoria de loli_
-â â·ï¸ *${prefix}Neko*
-â _Imagen aleatoria de neko_
-âââââââââââââââââââââ
-*ã Porcentaje ã*
-âââââââââââââââââââââ
-â â· *${prefix}Rate (Texto)*
-âââââââââââââââââââââ
-*ã TOOLS ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Tomp3*
-â _Audio de video_
-â _Canciones_
-â â·ï¸ *${prefix}Tts (Texto)*
-â _Texto a sonido_
-â â·ï¸ *${prefix}Wame*
-â _Link de wa.me_
-â â·ï¸ *${prefix}Ocr*
-â _Texto en imagen_
-â â·ï¸ *${prefix}Wait*
-âââââââââââââââââââââ
-*ã IMAGENES ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Cogan*
-â _Foto aleatoria de un hombre_
-â â·ï¸ *${prefix}Cecan*
-â _Foto aleatoria de una mujer_
-â â·ï¸ *${prefix}Wp*
-â _Imagen aleatoria_
-â â·ï¸ *${prefix}Img (texto)*
-â _Imagen_
-â â·ï¸ *${prefix}Google (Texto)*
-â _Buscar cosas en google_
-âââââââââââââââââââââ
-*ã Codigos ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Kodebahasa*
-â _Codigo de idioma_
-â â·ï¸ *${prefix}Kodenegara*
-â _Codigo de paÃ­s_
-âââââââââââââââââââââ
-*ã OTRO ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Lirik (Nombre)*
-â _Letra de canciones_
-â â·ï¸ *${prefix}Map (Area)*
-â _Un mapa_
-â â·ï¸ *${prefix}Gplaystore*
-â _Busqueda en playstore_
-âââââââââââââââââââââ
-*ã DESCARGAS ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Ytmp3 (Link)*
-â _Descargar audios de YT, es mejor con play_
-â â·ï¸ *${prefix}Ytmp4 (Link)*
-â _Descargar video de YT_
-â â·ï¸ *${prefix}Fb (Link)*
-â _Descargar de FB_
-â â·ï¸ *${prefix}Ig (Link)*
-â _Descargar de IG_
-â â·ï¸ *${prefix}Scdl (Link)*
-â _Descargador de Soundcloud_
-â â·ï¸ *${prefix}Tik (Link)*
-â _Descargar Tiktok_
-â â·ï¸ *${prefix}Pin (Link)*
-â _Descargar Pinterest_
-â â·ï¸ *${prefix}Joox (CanciÃ³n)
-â _Descargar canciones_
-âââââââââââââââââââââ
-*ã DueÃ±o ã*
-âââââââââââââââââââââ
-â â·ï¸ *${prefix}Clone*
-â _Clonacion de perfil_
-â â·ï¸ *${prefix}Block*
-â _Bloquear_
-â â·ï¸ *${prefix}Unblock*
-â _Desbloquear_
-â â·ï¸ *${prefix}Bc*
-â _Anuncio_
-â â·ï¸ *${prefix}Blocklist*
-â _Lista de usuarios bloqueados_
-âââââââââââââââââââââ`,
+┏━━━━━━━━━━━━━━━━━━━━
+┃───〘 ꨄ︎ 𝐀𝐥𝐞𝐗𝐱-𝐁𝐨𝐭 ꨄ︎〙───
+┃━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Info*
+┃ _Información del bot_
+┠⊷️ *${prefix}Owner*
+┃ _Dueño del bot_
+┠⊷️ *${prefix}Ping*
+┃ _Velocidad_
+┗━━━━━━━━━━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━━━━
+┃─────〘  *List menu* 〙─────
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 GRUPO 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Listadmin*
+┃ _Lista de los admin_
+┠⊷️ *${prefix}Listonline*
+┃ _Lista de los miembros en linea_
+┠⊷️ *${prefix}Closegc*
+┃ _Cerrar grupo_
+┠⊷️ *${prefix}Opengc*
+┃ _Abrir grupo_
+┠⊷️ *${prefix}Promote*
+┃ _Dar admin_
+┠⊷️ *${prefix}Demote*
+┃ _Quitar admin_
+┠⊷️ *${prefix}Setname*
+┃ _Establecer nombre del grupo_
+┠⊷️ *${prefix}Setdesk*
+┃ _Establecer descripción del grupo_
+┠⊷️ *${prefix}Add*
+┃ _Añadir miembro_
+┠⊷️ *${prefix}Kick*
+┃ _Eliminar miembro_
+┠⊷️ *${prefix}Tagall*
+┃ _Mencionar a todos_
+┠⊷️ *${prefix}Linkgc*
+┃ _Link del grupo_
+┠⊷️ *${prefix}Leave*
+┃ _Eliminar bot_
+┠⊷️ *${prefix}Notif*
+┃ _Notificación a todos_
+┠⊷️ *${prefix}Welcome*
+┃ _On/off Bienvenida_
+┠⊷️ *${prefix}Delete*
+┃ _Eliminar mensaje del bot_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 FUN 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Reverse (Texto)*
+┃ _Escribir al reves_
+┠⊷️ *${prefix}Itsme*
+┃ _Tu perfil_
+┠⊷️ *${prefix}Tagme*
+┃ _Mencionarte_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 MEDIA 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}listvn*
+┃ _Lista de sonidos_
+┠⊷️ *${prefix}listimg*
+┃ _Lista de fotos_
+┠⊷️ *${prefix}liststik*
+┃ _Lista de sticker_
+┠⊷️ *${prefix}listvid*
+┃ _Lista de videos_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 ANIME 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Kusonime (Nombre)*
+┃ _Información de animes_
+┠⊷️ *${prefix}Neonime (Nombre)*
+┃ _Información de neoanimes_
+┠⊷️ *${prefix}Charnime (Nombre)*
+┃ _Personajes de anime_
+┠⊷️ *${prefix}Anime*
+┃ _Imagen aleatoria de anime_
+┠⊷️ *${prefix}Loli*
+┃ _Imagen aleatoria de loli_
+┠⊷️ *${prefix}Neko*
+┃ _Imagen aleatoria de neko_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 Porcentaje 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷ *${prefix}Rate (Texto)*
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 TOOLS 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Tomp3*
+┃ _Audio de video_
+┃ _Canciones_
+┠⊷️ *${prefix}Tts (Texto)*
+┃ _Texto a sonido_
+┠⊷️ *${prefix}Wame*
+┃ _Link de wa.me_
+┠⊷️ *${prefix}Ocr*
+┃ _Texto en imagen_
+┠⊷️ *${prefix}Wait*
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 IMAGENES 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Cogan*
+┃ _Foto aleatoria de un hombre_
+┠⊷️ *${prefix}Cecan*
+┃ _Foto aleatoria de una mujer_
+┠⊷️ *${prefix}Wp*
+┃ _Imagen aleatoria_
+┠⊷️ *${prefix}Img (texto)*
+┃ _Imagen_
+┠⊷️ *${prefix}Google (Texto)*
+┃ _Buscar cosas en google_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 Codigos 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Kodebahasa*
+┃ _Codigo de idioma_
+┠⊷️ *${prefix}Kodenegara*
+┃ _Codigo de país_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 OTRO 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Lirik (Nombre)*
+┃ _Letra de canciones_
+┠⊷️ *${prefix}Map (Area)*
+┃ _Un mapa_
+┠⊷️ *${prefix}Gplaystore*
+┃ _Busqueda en playstore_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 DESCARGAS 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Ytmp3 (Link)*
+┃ _Descargar audios de YT, es mejor con play_
+┠⊷️ *${prefix}Ytmp4 (Link)*
+┃ _Descargar video de YT_
+┠⊷️ *${prefix}Fb (Link)*
+┃ _Descargar de FB_
+┠⊷️ *${prefix}Ig (Link)*
+┃ _Descargar de IG_
+┠⊷️ *${prefix}Scdl (Link)*
+┃ _Descargador de Soundcloud_
+┠⊷️ *${prefix}Tik (Link)*
+┃ _Descargar Tiktok_
+┠⊷️ *${prefix}Pin (Link)*
+┃ _Descargar Pinterest_
+┠⊷️ *${prefix}Joox (Canción)
+┃ _Descargar canciones_
+┗━━━━━━━━━━━━━━━━━━━━
+*〘 Dueño 〙*
+┏━━━━━━━━━━━━━━━━━━━━
+┠⊷️ *${prefix}Clone*
+┃ _Clonacion de perfil_
+┠⊷️ *${prefix}Block*
+┃ _Bloquear_
+┠⊷️ *${prefix}Unblock*
+┃ _Desbloquear_
+┠⊷️ *${prefix}Bc*
+┃ _Anuncio_
+┠⊷️ *${prefix}Blocklist*
+┃ _Lista de usuarios bloqueados_
+┗━━━━━━━━━━━━━━━━━━━━`,
 
 contextInfo: {
   mentionedJid: [sender]
